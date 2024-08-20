@@ -1,0 +1,56 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Default font for the entire body */
+}
+
+p {
+    font-family: 'Roboto', sans-serif; /* Apply a different font to paragraphs */
+    font-size: 16px; /* Set a comfortable reading size */
+    line-height: 1.6; /* Increase line height for better readability */
+    color: #333; /* Dark grey color for better contrast and less strain on eyes */
+}
+
+
+
+
+
+.navbar{
+    background-color: white;
+}
+/* Nav links bolded */
+.navbar-nav .nav-link {
+    font-size: 120%;
+    font-weight: bold;
+    color: #2a2a2a; /* grey color */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+  }
+
+  /* Nav links increase size on hover */
+  .navbar-nav .nav-link:hover {
+    transform: scale(1.1); /* Slightly increase the size */
+    color: #007bff; /* Optional: Change color on hover */
+  }
+
+  /* Style for dropdown links */
+  .dropdown-menu .dropdown-item {
+    color: #007bff; /* Default text color */
+    font-weight: bold; /* Make the text bold */
+    padding: 10px 20px; /* Adjust padding */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
+  }
+
+  /* Hover effect for dropdown links */
+  .dropdown-menu .dropdown-item:hover {
+    background-color: #007bff; /* Change background color on hover */
+    color: white; /* Change text color on hover */
+  }
+
+  /* Active/Focus state styling */
+  .dropdown-menu .dropdown-item:active, .dropdown-menu .dropdown-item:focus {
+    background-color: #0056b3; /* Darker blue when active/focused */
+    color: white;
+  }
+  /*--------carousel------------*/
+  .carousel-inner img {
+    height: 550px; /* Adjust this value to your preferred height */
+    object-fit: cover; /* Ensures the image covers the area while maintaining aspect ratio */
+}

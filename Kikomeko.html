@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIKOMEKO SS </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <link rel="icon" href="./Assets/budge.JPG" type="image/x-icon">
+    <link rel="stylesheet" href="kikomeko.css">
+    <style>
+    h2{
+       text-align:center;
+    }
+    .col{
+        margin-top:3px;
+    }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="gallery.html" style="color: #2a2a2a;">
+                <img src="./Assets/budge.JPG" alt="School Icon" width="30" height="30" class="d-inline-block align-text-top">
+                KIKOMEKO SS
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="kikomeko.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Academics
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="sports.html">Academics</a></li>
+                          <li><a class="dropdown-item" href="mdd.html">Debates</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="compound.html">Adimisions</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Activities
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="sports.html">Sports</a></li>
+                          <li><a class="dropdown-item" href="mdd.html">MDD</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="compound.html">Our School Compound</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Join Us
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="sports.html">As a Student</a></li>
+                          <li><a class="dropdown-item" href="mdd.html">As a Teacher</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="compound.html">As an Intern</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex ms-3">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-primary" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="bg-dark text-white text-center py-5">
+        <div class="container">
+            <h1>KIKOMEKO SECONDARY SCHOOL</h1>
+            <p class="lead" style="color: #007bff;">"Prepared For all Things"</p>
+        </div>
+    </header>
+
+    <!-- Image Carousel -->
+    <div id="schoolCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./Assets/images/DSC_0049.JPG" class="d-block w-100" alt="School Image 1">
+            </div>
+            <div class="carousel-item">
+                <img src="./Assets/images/DSC_1164.JPG" class="d-block w-100" alt="School Image 2">
+            </div>
+            <div class="carousel-item">
+                <img src="./Assets/images/DSC_0013.JPG" class="d-block w-100" alt="School Image 3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#schoolCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#schoolCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <!-- About Us Section -->
+        <section>
+            <h2>About Us</h2>
+            <p>Kikomeko Memorial Secondary School is dedicated to providing quality education and holistic development for our students. Our experienced staff, modern facilities, and rich extracurricular programs ensure that every student achieves their full potential.</p>
+            <div class="row">
+                <div class="col-md-3 mt-3 ">
+                    <div class="card">
+                        <img src="about1.jpg" class="card-img-top" alt="About Us Image 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Our Mission</h5>
+                            <p class="card-text">Description of facility or aspect of the school.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mt-3 ">
+                    <div class="card">
+                        <img src="about2.jpg" class="card-img-top" alt="About Us Image 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Our school</h5>
+                            <p class="card-text">Description of facility or aspect of the school.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mt-3 ">
+                    <div class="card">
+                        <img src="about3.jpg" class="card-img-top" alt="About Us Image 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Our Objectives</h5>
+                            <p class="card-text">Description of facility or aspect of the school.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mt-3">
+                    <div class="card">
+                        <img src="about4.jpg" class="card-img-top" alt="About Us Image 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Facility 4</h5>
+                            <p class="card-text">Description of facility or aspect of the school.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Academics Section-->
+        <section class="mt-4 mt-3 ">
+            <h2>Academics</h2>
+            <p>Our academic curriculum is designed to challenge students and foster a love of learning. We offer a range of subjects and programs to cater to diverse interests and academic goals.</p>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="academics1.jpg" class="card-img-top" alt="Academics Image 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Program 1</h5>
+                            <p class="card-text">Description of academic program or feature.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mt-3 ">
+                    <div class="card">
+                        <img src="academics2.jpg" class="card-img-top" alt="Academics Image 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Program 2</h5>
+                            <p class="card-text">Description of academic program or feature.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mt-3 ">
+                    <div class="card">
+                        <img src="academics3.jpg" class="card-img-top" alt="Academics Image 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Program 3</h5>
+                            <p class="card-text">Description of academic program or feature.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mt-3 ">
+                    <div class="card">
+                        <img src="academics4.jpg" class="card-img-top" alt="Academics Image 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Program 4</h5>
+                            <p class="card-text">Description of academic program or feature.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Co-curricular Activities Section -->
+        <section class="mt-4" style="background-color: #2a2a2a;">
+            <h2>Activities</h2>
+            <p>We believe in the importance of a well-rounded education. Our school provides various co-curricular activities including sports, arts, and leadership programs to enhance students' skills and interests beyond the classroom.</p>
+            <div class="row">
+                <div class="col-md-4 mt-3 ">
+                    <div class="card">
+                        <img src="co-curricular1.jpg" class="card-img-top" alt="Co-curricular Image 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Sports</h5>
+                            <p class="card-text">Description of co-curricular activity or program.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mt-3 ">
+                    <div class="card">
+                        <img src="co-curricular3.jpg" class="card-img-top" alt="Co-curricular Image 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Art</h5>
+                            <p class="card-text">Description of co-curricular activity or program.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-3">
+                    <div class="card">
+                        <img src="co-curricular4.jpg" class="card-img-top" alt="Co-curricular Image 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Activity 4</h5>
+                            <p class="card-text">Description of co-curricular activity or program.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="mt-4">
+            <h2 style="color: #007bff;">Gallery</h2>
+            <p>Explore our gallery to view the vibrant life at Kikomeko Memorial Secondary School. From events and activities to campus facilities, our gallery showcases the dynamic experiences of our students.</p>
+            <div class="row">
+                <div class="col-md-3 mt-3 ">
+                    <div class="card">
+                        <img src="./Assets/images/DSC_0017.JPG" class="card-img-top" alt="Gallery Image 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Gallery 1</h5>
+                            <p class="card-text">Description of gallery image or event.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mt-3">
+                    <div class="card">
+                        <img src="./Assets/images/DSC_1085.JPG" class="card-img-top" alt="Gallery Image 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Gallery 2</h5>
+                            <p class="card-text">Description of gallery image or event.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mt-3 ">
+                    <div class="card">
+                        <img src="./Assets/images/DSC_0039.JPG" class="card-img-top" alt="Gallery Image 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Gallery 3</h5>
+                            <p class="card-text">Description of gallery image or event.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mt-3 ">
+                    <div class="card">
+                        <img src="./Assets/images/DSC_1163.JPG" class="card-img-top" alt="Gallery Image 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Gallery 4</h5>
+                            <p class="card-text">Description of gallery image or event.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- See More Button -->
+    <div class="see-more-btn" style="display: block; margin: 20px auto; text-align: center;">
+        <button class="btn btn-primary" id="seeMoreButton">See More</button>
+    </div>
+            </div>
+        </section>
+      
+
+    <!-- Administrators Section -->
+    <section class="container my-5">
+        <h2>Administrators</h2>
+        <p>Meet the dedicated administrators who oversee the operations and ensure the smooth running of our school.</p>
+        <div class="row">
+            <div class="col-md-4 mt-3 ">
+                <div class="card">
+                    <img src="./Assets/images/DSC_0017.JPG" class="card-img-top" alt="Administrator 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Head Teacher</h5>
+                        <p class="card-text">Position: Head teacher</p>
+                        <p class="card-text">Brief description or bio of the administrator.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-3 ">
+                <div class="card">
+                    <img src="admin2.jpg" class="card-img-top" alt="Administrator 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Deputy Head Teacher</h5>
+                        <p class="card-text">Position: D.O.S</p>
+                        <p class="card-text">Brief description or bio of the administrator.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-3 ">
+                <div class="card">
+                    <img src="./Assets/images/DSC_1163.JPG" class="card-img-top" alt="Administrator 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Director of Studies</h5>
+                        <p class="card-text">Position: Administrator</p>
+                        <p class="card-text">Brief description or bio of the administrator.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-3 ">
+                <div class="card">
+                    <img src="admin4.jpg" class="card-img-top" alt="Administrator 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Assistant D.O.S</h5>
+                        <p class="card-text">Position: Administrator</p>
+                        <p class="card-text">Brief description or bio of the administrator.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-3 ">
+                <div class="card">
+                    <img src="admin5.jpg" class="card-img-top" alt="Administrator 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Burser</h5>
+                        <p class="card-text">Position: Administrator</p>
+                        <p class="card-text">Brief description or bio of the administrator.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-3 ">
+                <div class="card">
+                    <img src="admin6.jpg" class="card-img-top" alt="Administrator 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Warden</h5>
+                        <p class="card-text">Position: Administrator</p>
+                        <p class="card-text">Brief description or bio of the administrator.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Teachers Section -->
+<section class="mt-5">
+    <h2>Our Teachers</h2>
+    <p>Our teaching staff is composed of experienced and passionate educators who are committed to the academic and personal growth of our students. Each teacher brings unique skills and expertise to help students achieve their full potential.</p>
+    <div class="row">
+        <!-- Teacher 1 -->
+        <div class="col-md-3 mt-3 ">
+            <div class="card">
+                <img src="teacher1.jpg" class="card-img-top" alt="Teacher 1">
+                <div class="card-body">
+                    <h5 class="card-title">Alice Green - Math Teacher</h5>
+                    <p class="card-text">Alice has a passion for teaching mathematics and loves helping students solve complex problems and develop analytical skills.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Teacher 2 -->
+        <div class="col-md-3 mt-3 ">
+            <div class="card">
+                <img src="teacher2.jpg" class="card-img-top" alt="Teacher 2">
+                <div class="card-body">
+                    <h5 class="card-title">Robert White - Science Teacher</h5>
+                    <p class="card-text">Robert brings over a decade of experience in teaching science, with a special focus on biology and environmental studies.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Teacher 3 -->
+        <div class="col-md-3 mt-3 ">
+            <div class="card">
+                <img src="teacher3.jpg" class="card-img-top" alt="Teacher 3">
+                <div class="card-body">
+                    <h5 class="card-title">Rachel Adams - English Teacher</h5>
+                    <p class="card-text">Rachel is an expert in literature and composition, inspiring students to appreciate the beauty of language and effective communication.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Teacher 4 -->
+        <div class="col-md-3 mt-3 ">
+            <div class="card">
+                <img src="teacher4.jpg" class="card-img-top" alt="Teacher 4">
+                <div class="card-body">
+                    <h5 class="card-title">David Brown - History Teacher</h5>
+                    <p class="card-text">David specializes in world history, bringing the past to life for students through engaging storytelling and critical thinking exercises.</p>
+                </div>
+            </div>
+        </div>
+       
+   
+    </div>
+</section>
+
+<!-- Non-Teaching Staff Section -->
+<section class="mt-5">
+    <h2>Our Non-Teaching Staff</h2>
+    <p>The non-teaching staff at Kikomeko Memorial Secondary School play a crucial role in ensuring the smooth operation of the school. Their dedication and hard work help create a safe, clean, and welcoming environment for all students and staff.</p>
+    <div class="row">
+        <!-- Matron -->
+        <div class="col-md-4 mt-3">
+            <div class="card">
+                <img src="matron.jpg" class="card-img-top" alt="Matron">
+                <div class="card-body">
+                    <h5 class="card-title">Grace Williams - Metron</h5>
+                    <p class="card-text">Grace oversees the health and well-being of the students, ensuring their comfort and safety within the school premises. She is a caring and attentive figure, always available to provide support.</p>
+                </div>
+            </div>
+        </div>
+        <!-- cook -->
+        <div class="col-md-4 mt-3">
+            <div class="card">
+                <img src="cook.jpg" class="card-img-top" alt="Warden">
+                <div class="card-body">
+                    <h5 class="card-title">KIgenyi - Cook</h5>
+                    <p class="card-text">John is responsible for maintaining order and discipline in the school hostels. He ensures that the students adhere to the rules and that the living conditions are optimal.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Cook 1 -->
+        <div class="col-md-4 mt-3 ">
+            <div class="card">
+                <img src="cook1.jpg" class="card-img-top" alt="Cook 1">
+                <div class="card-body">
+                    <h5 class="card-title">Mary Johnson - Head Cook</h5>
+                    <p class="card-text">Mary leads the kitchen staff, preparing nutritious and delicious meals for the students and staff. Her culinary skills ensure that everyone enjoys healthy and tasty food every day.</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+                   
+    <!-- Founders Section -->
+    <section class="container my-5">
+        <h2>Directors</h2>
+        <p>Meet the visionary Directors who established Kikomeko Memorial Secondary School.</p>
+        <div class="row">
+            <div class="col-md-3 mt-3 ">
+                <div class="card">
+                    <img src="Director1.jpg" class="card-img-top" alt="Founder 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Director 1</h5>
+                        <p class="card-text">Brief description or bio of the founder.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mt-3 ">
+                <div class="card">
+                    <img src="Director2.jpg" class="card-img-top" alt="Founder 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Director 2</h5>
+                        <p class="card-text">Brief description or bio of the founder.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mt-3 ">
+                <div class="card">
+                    <img src="Director3.jpg" class="card-img-top" alt="Founder 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Director 3</h5>
+                        <p class="card-text">Brief description or bio of the founder.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mt-3">
+                <div class="card">
+                    <img src="Director4.jpg" class="card-img-top" alt="Founder 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Director 4</h5>
+                        <p class="card-text">Brief description or bio of the founder.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+        
+    </main>
+
+    <footer class=" text-white text-center pt-5" style="background: #2a2a2a;">
+        <div class="container text-center text-md-left" >
+            <div class="row text-center text-md-left">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 ">
+                    <h3 class="text-uppercase mb-4 font-weight-bold text-warning">KIKOMEKO SS</h3>
+                    <img class="footer-image" src="./Assets/budge.JPG" alt="footer-image" height="165" width="180">
+                    <p class="font-italic" style="color: white;">Prepared for All Things</p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h3 class="text-uppercase mb-4 font-weight-bold text-warning">Links</h3>
+                    <p>
+                        <a href="index.html" class="text-white" style="text-decoration: none;">Home</a>
+                    </p>
+                    <p>
+                        <a href="about.html" class="text-white" style="text-decoration: none;">About</a>
+                    </p>
+                    <p>
+                        <a href="contact.html" class="text-white" style="text-decoration: none;">Contact us</a>
+                    </p>
+                    <p>
+                        <a href="blog.htm" class="text-white" style="text-decoration: none;">Blog</a>
+                    </p>
+                    <p>
+                        <a href="gallery.html" class="text-white" style="text-decoration: none;">Gallery</a>
+                    </p>
+                   
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h3 class="text-uppercase mb-4 font-weight-bold text-warning">The School</h3>
+                    <p>
+                        <a href="help.html" class="text-white" style="text-decoration: none;">Visit shool</a>
+                    </p>
+                    <p>
+                        <a href="donate.html" class="text-white" style="text-decoration: none;">Adimisions</a>
+                    </p>
+                    <p>
+                        <a href="partner.htm" class="text-white" style="text-decoration: none;">Pay Fees</a>
+                    </p>
+                    <p>
+                        <a href="volunter.html" class="text-white" style="text-decoration: none;">FAQ</a>
+                    </p>
+                    <p>
+                        <a href="join.html" class="text-white" style="text-decoration: none;">Join Our Team</a>
+                    </p>
+                </div>
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h3 class="text-uppercase mb-4 font-weight-bold text-warning">Contact</h3>
+                    <p style="color: white;">
+                        <i class="fas fa-home mr-3"></i>Kituntu Sub-county
+                    </p>
+                    <p style="color: white;">
+                        <i class="fas fa-envelope mr-3"></i>email@gmail.com
+                    </p>
+                    <p style="color: white;">
+                        <i class="fas fa-phone mr-3"></i>+256 
+                    </p>
+                    <p style="color: white;">
+                        <i class="fas fa-phone mr-3"></i>+256 
+                    </p style="color: white;">
+                    <p style="color: white;">
+                        <i class="fas fa-phone mr-3"></i>+256 
+                    </p>
+                </div>
+            </div>
+            <hr class="mb-4">
+            <div class="row align-items-center">
+                <div class="col-md-7 col-lg-8" >
+                    <p style="color: white;">Copyright &copy;2024 All rights reservd to:
+                        <a href="copyright.html" style="text-decoration: none;">
+                            <strong class="text-warning">KIKOMEKO SS</strong>
+                        </a>
+                    </p>
+                </div>
+                <div class="col-md-5 col-lg-4">
+                    <div class="text-center text-md-right">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <a href="https://www.facebook.com/profile.php?id=61551726624984" class="btn-floating btn-sm text-white" style="font-size: 23px;">
+                                <i class="fab fa-facebook"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://twitter.com/TikTakAcademy" class="btn-floating btn-sm text-white" style="font-size: 23px;">
+                                <i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://wa.me/256753939396" class="btn-floating btn-sm text-white" style="font-size: 23px;">
+                                <i class="fab fa-whatsapp"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.youtube.com/channel/UC0vyq0ismC-FzdMMsLg6iYw" class="btn-floating btn-sm text-white" style="font-size: 23px;">
+                                <i class="fab fa-youtube"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            
+            
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="kikomeko.js"></script>
+</body>
+
+</html>
+
