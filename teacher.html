@@ -67,6 +67,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact Us</a>
                     </li>
+                    
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                           Join Us
@@ -96,93 +97,103 @@
     </header>
 
     
-    <style>
-        /* Custom styles for social media icons */
-        .social-icons a {
-            color: #007bff;
-            font-size: 24px;
-            margin-right: 15px;
-            transition: color 0.3s ease;
-        }
-
-        .social-icons a:hover {
-            color: #0056b3;
-        }
-
-        /* Full-width section */
-        .map-container {
-            width: 100%;
-            height: 400px;
-        }
-    </style>
-</head>
-<body>
-
-<div class="container mt-5">
-    <h1 class="text-center mb-4">Contact Us</h1>
-    
-    <div class="row">
-        <!-- Contact Form -->
-        <div class="col-lg-6 mb-4">
-            <h2>Get in Touch</h2>
-            <form id="phoneForm">
-                <div class="mb-3">
-                    <label for="name" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Enter Your Name">
+    <!-- Main Content -->
+    <main class="container my-5">
+        <div class="container mt-5">
+            <h2 class="text-center mb-4">Appl for a vacancy</h2>
+            <form action="/submit_teacher_application" method="POST" enctype="multipart/form-data">
+                <!-- Personal Information -->
+                <div class="form-group">
+                    <label for="teacherName">Full Name</label>
+                    <input type="text" class="form-control" id="teacherName" name="teacherName" placeholder="Enter full name" required>
                 </div>
-                <div class="mb-3">
-                    <label for="phoneNumber" class="form-label">Phone Number</label>
-                    <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Enter your phone number" required>
-                    <div class="form-text">Format: +2564567890</div>
+        
+                <div class="form-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" class="form-control" id="dob" name="dob" required>
                 </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="email" placeholder="name@example.com">
+        
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <select class="form-control" id="gender" name="gender" required>
+                        <option value="" disabled selected>Select gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
                 </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" id="message" rows="5" placeholder="Your Message"></textarea>
+        
+                <div class="form-group">
+                    <label for="address">Home Address</label>
+                    <textarea class="form-control" id="address" name="address" rows="3" placeholder="Enter home address" required></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary">Send Message</button>
+        
+                <div class="form-group">
+                    <label for="contactNumber">Contact Number</label>
+                    <input type="tel" class="form-control" id="contactNumber" name="contactNumber" placeholder="Enter contact number" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter email address" required>
+                </div>
+        
+                <!-- Educational Background -->
+                <div class="form-group">
+                    <label for="highestQualification">Highest Qualification</label>
+                    <input type="text" class="form-control" id="highestQualification" name="highestQualification" placeholder="Enter highest qualification" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="university">University/College Attended</label>
+                    <input type="text" class="form-control" id="university" name="university" placeholder="Enter university/college name" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="graduationYear">Year of Graduation</label>
+                    <input type="number" class="form-control" id="graduationYear" name="graduationYear" placeholder="Enter year of graduation" required>
+                </div>
+        
+                <!-- Teaching Experience -->
+                <div class="form-group">
+                    <label for="teachingExperience">Teaching Experience (in years)</label>
+                    <input type="number" class="form-control" id="teachingExperience" name="teachingExperience" placeholder="Enter years of teaching experience" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="subjectsTaught">Subjects Taught</label>
+                    <input type="text" class="form-control" id="subjectsTaught" name="subjectsTaught" placeholder="Enter subjects taught" required>
+                </div>
+        
+                <!-- File Upload for Academic Documents -->
+                <div class="form-group">
+                    <label for="academicDocuments">Upload Academic Documents</label>
+                    <input type="file" class="form-control-file" id="academicDocuments" name="academicDocuments[]" multiple required>
+                    <small class="form-text text-muted">You can upload multiple documents. Accepted formats: PDF, DOCX, JPG, PNG.</small>
+                </div>
+        
+                <!-- Submit Button -->
+                <!-- Submit bbutton -->
+    <div class="see-more-btn" style="display: block; margin: 20px auto; text-align: center;">
+        <button class="btn btn-primary" id="seeMoreButton">Submit Application</button>
+    </div>
             </form>
         </div>
         
-        <!-- Google Map -->
-        <div class="col-lg-6 mb-4">
-            <h2>Our Location</h2>
-            <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1410.6128367428355!2d31.998752145017512!3d0.06678463407145192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177d6753c2606f61%3A0xca6e9a5dc86d1dcd!2sKituntu!5e0!3m2!1sen!2sug!4v1724154774994!5m2!1sen!2sug" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-        </div>
-    </div>
-    
-    <!-- Social Media Links -->
-    <div class="text-center mt-5">
-        <h2>Follow Us</h2>
-        <div class="social-icons">
-            <i class="fab fa-facebook"></i></a>
-            <i class="fab fa-twitter"></i></a>
-            <i class="fab fa-whatsapp"></i></a>
-            <i class="fab fa-youtube"></i></a>
-        </div>
-    </div>
-</div>
 
-    
-        
+
     </main>
 
     <footer class=" text-white text-center pt-5" style="background: #2a2a2a;">
         <div class="container text-center text-md-left" >
             <div class="row text-center text-md-left">
                 <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 ">
-                    <h3 class="text-uppercase mb-4 font-weight-bold text-primary">KIKOMEKO SS</h3>
+                    <h3 class="text-uppercase mb-4 font-weight-bold text-warning">KIKOMEKO SS</h3>
                     <img class="footer-image" src="./Assets/budge.JPG" alt="footer-image" height="165" width="180">
                     <p class="font-italic" style="color: white;">Prepared for All Things</p>
                 </div>
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                    <h3 class="text-uppercase mb-4 font-weight-bold text-primary">Links</h3>
+                    <h3 class="text-uppercase mb-4 font-weight-bold text-warning">Links</h3>
                     <p>
                         <a href="index.html" class="text-white" style="text-decoration: none;">Home</a>
                     </p>
@@ -201,7 +212,7 @@
                    
                 </div>
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                    <h3 class="text-uppercase mb-4 font-weight-bold text-primary">The School</h3>
+                    <h3 class="text-uppercase mb-4 font-weight-bold text-warning">The School</h3>
                     <p>
                         <a href="help.html" class="text-white" style="text-decoration: none;">Visit shool</a>
                     </p>
@@ -219,7 +230,7 @@
                     </p>
                 </div>
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <h3 class="text-uppercase mb-4 font-weight-bold text-primary">Contact</h3>
+                    <h3 class="text-uppercase mb-4 font-weight-bold text-warning">Contact</h3>
                     <p style="color: white;">
                         <i class="fas fa-home mr-3"></i>Kituntu Sub-county
                     </p>
@@ -227,10 +238,10 @@
                         <i class="fas fa-envelope mr-3"></i>email@gmail.com
                     </p>
                     <p style="color: white;">
-                        <i class="fas fa-phone mr-3"></i>+256 701643245
+                        <i class="fas fa-phone mr-3"></i>+256 
                     </p>
                     <p style="color: white;">
-                        <i class="fas fa-phone mr-3"></i>+256 774010730
+                        <i class="fas fa-phone mr-3"></i>+256 
                     </p style="color: white;">
                     <p style="color: white;">
                         <i class="fas fa-phone mr-3"></i>+256 
@@ -242,7 +253,7 @@
                 <div class="col-md-7 col-lg-8" >
                     <p style="color: white;">Copyright &copy;2024 All rights reservd to:
                         <a href="copyright.html" style="text-decoration: none;">
-                            <strong class="text-primary">KIKOMEKO SS</strong>
+                            <strong class="text-warning">KIKOMEKO SS</strong>
                         </a>
                     </p>
                 </div>
@@ -250,19 +261,19 @@
                     <div class="text-center text-md-right">
                         <ul class="list-unstyled list-inline">
                             <li class="list-inline-item">
-                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;">
+                                <a href="https://www.facebook.com/profile.php?id=61551726624984" class="btn-floating btn-sm text-white" style="font-size: 23px;">
                                 <i class="fab fa-facebook"></i></a>
                             </li>
                             <li class="list-inline-item">
-                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;">
+                                <a href="https://twitter.com/TikTakAcademy" class="btn-floating btn-sm text-white" style="font-size: 23px;">
                                 <i class="fab fa-twitter"></i></a>
                             </li>
                             <li class="list-inline-item">
-                                <a href="https://wa.me/256701643245" class="btn-floating btn-sm text-white" style="font-size: 23px;">
+                                <a href="https://wa.me/256753939396" class="btn-floating btn-sm text-white" style="font-size: 23px;">
                                 <i class="fab fa-whatsapp"></i></a>
                             </li>
                             <li class="list-inline-item">
-                                <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;">
+                                <a href="https://www.youtube.com/channel/UC0vyq0ismC-FzdMMsLg6iYw" class="btn-floating btn-sm text-white" style="font-size: 23px;">
                                 <i class="fab fa-youtube"></i></a>
                             </li>
                         </ul>
@@ -275,12 +286,9 @@
         </div>
     </footer>
 
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="form.js"></script>
+    <script src="kikomeko.js"></script>
 </body>
 
 </html>
-
-
 
