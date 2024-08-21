@@ -100,8 +100,8 @@
     <!-- Main Content -->
     <main class="container my-5">
         <div class="container mt-5">
-            <h2 class="text-center mb-4">Appl for a vacancy</h2>
-            <form action="/submit_teacher_application" method="POST" enctype="multipart/form-data">
+            <h2 class="text-center mb-4">Apply For Internship</h2>
+            <form action="/submit_intern_application" method="POST" enctype="multipart/form-data">
                 <!-- Personal Information -->
                 <div class="form-group">
                     <label for="teacherName">Full Name</label>
@@ -109,33 +109,13 @@
                 </div>
         
                 <div class="form-group">
-                    <label for="dob">Date of Birth</label>
-                    <input type="date" class="form-control" id="dob" name="dob" required>
-                </div>
-        
-                <div class="form-group">
-                    <label for="gender">Gender</label>
-                    <select class="form-control" id="gender" name="gender" required>
-                        <option value="" disabled selected>Select gender</option>
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
-        
-                <div class="form-group">
-                    <label for="address">Home Address</label>
-                    <textarea class="form-control" id="address" name="address" rows="3" placeholder="Enter home address" required></textarea>
+                    <label for="email">Email Address</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter email address" required>
                 </div>
         
                 <div class="form-group">
                     <label for="contactNumber">Contact Number</label>
                     <input type="tel" class="form-control" id="contactNumber" name="contactNumber" placeholder="Enter contact number" required>
-                </div>
-        
-                <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter email address" required>
                 </div>
         
                 <!-- Educational Background -->
@@ -149,22 +129,6 @@
                     <input type="text" class="form-control" id="university" name="university" placeholder="Enter university/college name" required>
                 </div>
         
-                <div class="form-group">
-                    <label for="graduationYear">Year of Graduation</label>
-                    <input type="number" class="form-control" id="graduationYear" name="graduationYear" placeholder="Enter year of graduation" required>
-                </div>
-        
-                <!-- Teaching Experience -->
-                <div class="form-group">
-                    <label for="teachingExperience">Teaching Experience (in years)</label>
-                    <input type="number" class="form-control" id="teachingExperience" name="teachingExperience" placeholder="Enter years of teaching experience" required>
-                </div>
-        
-                <div class="form-group">
-                    <label for="subjectsTaught">Subjects Taught</label>
-                    <input type="text" class="form-control" id="subjectsTaught" name="subjectsTaught" placeholder="Enter subjects taught" required>
-                </div>
-        
                 <!-- File Upload for Academic Documents -->
                 <div class="form-group">
                     <label for="academicDocuments">Upload Academic Documents</label>
@@ -172,15 +136,14 @@
                     <small class="form-text text-muted">You can upload multiple documents. Accepted formats: PDF, DOCX, JPG, PNG.</small>
                 </div>
         
-                <!-- Submit Button -->
+                 <!-- Submit Button -->
                 
              <div class="see-more-btn" style="display: block; margin: 20px auto; text-align: center;">
-             <button class="btn btn-primary" id="seeMoreButton">Submit Application</button>
-              </div>
+                <button class="btn btn-primary" id="seeMoreButton">Submit Application</button>
+                 </div>
             </form>
         </div>
         
-
 
     </main>
 
