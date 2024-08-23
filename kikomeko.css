@@ -15,6 +15,7 @@ p {
 
 .navbar{
     background-color: white;
+    
 }
 /* Nav links bolded */
 .navbar-nav .nav-link {
@@ -54,3 +55,79 @@ p {
     height: 550px; /* Adjust this value to your preferred height */
     object-fit: cover; /* Ensures the image covers the area while maintaining aspect ratio */
 }
+
+.jumbotron {
+            background: url('./Assets/images/DSC_0012.JPG') no-repeat center center; /* Background image */
+            background-size: cover; /* Cover the entire area */
+            color: white; /* Text color */
+            padding: 60px 30px; /* Padding inside the jumbotron */
+            margin: 0; /* Remove margins */
+            width: 100%; /* Full width */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center; /* Centered text */
+        }
+        .jumbotron h1 {
+            font-size: 48px; /* Large font size for the headline */
+            font-weight: 700; /* Bold headline */
+            margin-bottom: 20px; /* Space below the headline */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for readability */
+        }
+        .jumbotron p {
+            font-size: 20px; /* Slightly larger font for the paragraph */
+            margin-bottom: 30px; /* Space below the paragraph */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for readability */
+        }
+        .jumbotron .btn {
+            background-color: #0056b3; /* Button background color */
+            color: white; /* Button text color */
+            padding: 15px 30px; /* Button padding */
+            font-size: 18px; /* Button text size */
+            border: none; /* Remove border */
+            border-radius: 5px; /* Slightly rounded button */
+            cursor: pointer; /* Pointer cursor on hover */
+            transition: background-color 0.3s; /* Smooth transition on hover */
+        }
+        .jumbotron .btn:hover {
+            background-color: #003d80; /* Darker color on hover */
+        }
+
+        .section1 {
+          display: flex; /* Flexbox for the row with two columns */
+          align-items: center; /* Center content vertically */
+          justify-content: space-between; /* Space between the columns */
+          padding: 20px; /* Padding inside the section */
+          margin: 0; /* Zero margins */
+          width: 100%; /* Full width */
+      }
+
+      .text-column {
+          flex: 1; /* Flex for text column */
+          padding-right: 20px; /* Padding on the right for spacing */
+          text-align: left; /* Align text to the left */
+      }
+
+      .text-column h2 {
+          font-size: 28px; /* Headline size */
+          margin-bottom: 10px; /* Space below the headline */
+      }
+
+      .text-column p {
+          font-size: 18px; /* Paragraph size */
+          line-height: 1.6; /* Line height for readability */
+          margin-bottom: 20px; /* Space below paragraphs */
+      }
+
+      .image-column {
+          flex: 1; /* Flex for image column */
+          text-align: center; /* Center the image */
+      }
+
+      .image-column img {
+          max-width: 100%; /* Make sure the image is responsive */
+          height: auto; /* Maintain aspect ratio */
+          border-radius: 8px; /* Optional: Rounded corners for the image */
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Box shadow for the image */
+      }
