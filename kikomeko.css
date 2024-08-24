@@ -131,3 +131,70 @@ p {
           border-radius: 8px; /* Optional: Rounded corners for the image */
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Box shadow for the image */
       }
+      .custom-caption {
+        
+        padding: 20px;
+        border-radius: 10px;
+        color: #0056b3; /* White text color */
+        text-align: center; /* Align text to the left */
+      }
+      
+      .custom-caption h5 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      
+      .custom-caption p {
+        font-size: 16px;
+        margin: 0;
+      }
+      
+      .carousel-item img {
+        filter: brightness(70%); /* Darken the image slightly */
+      }
+      
+      .carousel-caption {
+        bottom: 20%; /* Adjust the position of the caption */
+      }
+
+
+      .button-92 {
+        background-color: #007bff; /* Bootstrap primary color or any custom color */
+        color: white; /* Text color */
+        border: none; /* Remove default border */
+        padding: 10px 20px; /* Padding inside the button */
+        font-size: 16px; /* Font size */
+        font-weight: bold; /* Bold text */
+        border-radius: 5px; /* Rounded corners */
+        cursor: pointer; /* Pointer cursor on hover */
+        transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+    }
+    
+    .button-92:hover {
+        background-color: #0056b3; /* Darker shade on hover */
+        transform: scale(1.05); /* Slight zoom effect on hover */
+    }
+    
+    .button-92 i {
+        margin-left: 8px; /* Space between text and icon */
+    }
+    
+    .button-92:focus {
+        outline: none; /* Remove default focus outline */
+        box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Custom focus outline */
+    }
+    .button-92 {
+        transition: transform 0.3s ease;
+    }
+    
+    .button-92:hover {
+        transform: rotate(2deg);
+    }
+    .button-92[data-v-736b3c67] {
+        cursor: pointer;
+        font-size: 2rem;
+        font-weight: 700;
+        margin: 0;
+        padding: .1em .3em;
+    }        
