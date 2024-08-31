@@ -100,83 +100,125 @@
     <!-- Main Content -->
     <main class="container my-5">
         <div class="container mt-5">
-            <h2 class="text-center mb-4">Appl for a vacancy</h2>
-            <form action="/submit_teacher_application" method="POST" enctype="multipart/form-data">
-                <!-- Personal Information -->
-                <div class="form-group">
-                    <label for="teacherName">Full Name</label>
-                    <input type="text" class="form-control" id="teacherName" name="teacherName" placeholder="Enter full name" required>
+            <h2 class="text-center mb-4">Secondary School Application Form</h2>
+            <form>
+                <!-- Part 1: Particulars of Student -->
+                <div class="section mb-4">
+                    <h4>Particulars of Student</h4>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label for="studentName" class="form-label">Student Name</label>
+                            <input type="text" class="form-control" id="studentName" placeholder="Enter student's full name" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="studentDOB" class="form-label">Date of Birth</label>
+                            <input type="date" class="form-control" id="studentDOB" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="studentGender" class="form-label">Gender</label>
+                            <select class="form-control" id="studentGender" required>
+                                <option value="">Select Gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="studentNationality" class="form-label">Nationality</label>
+                            <input type="text" class="form-control" id="studentNationality" placeholder="Enter nationality" required>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="studentAddress" class="form-label">Address</label>
+                            <input type="text" class="form-control" id="studentAddress" placeholder="Enter address" required>
+                        </div>
+                    </div>
                 </div>
         
-                <div class="form-group">
-                    <label for="dob">Date of Birth</label>
-                    <input type="date" class="form-control" id="dob" name="dob" required>
+                <!-- Part 2: Results -->
+                <div class="section mb-4">
+                    <h4>Results</h4>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label for="studentPreviousSchool" class="form-label">Previous School Attended</label>
+                            <input type="text" class="form-control" id="studentPreviousSchool" placeholder="Enter previous school" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="studentGrades" class="form-label">Grades Achieved</label>
+                            <input type="text" class="form-control" id="studentGrades" placeholder="Enter grades achieved" required>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="uploadResults" class="form-label">Upload Academic Results (PDF only)</label>
+                            <input type="file" class="form-control" id="uploadResults" accept="application/pdf" required>
+                            <small class="form-text text-muted">Only PDF format is allowed.</small>
+                        </div>
+                    </div>
                 </div>
         
-                <div class="form-group">
-                    <label for="gender">Gender</label>
-                    <select class="form-control" id="gender" name="gender" required>
-                        <option value="" disabled selected>Select gender</option>
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                        <option value="other">Other</option>
-                    </select>
+                <!-- Part 3: Particulars of Parents -->
+                <div class="section mb-4">
+                    <h4>Particulars of Parents</h4>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label for="fatherName" class="form-label">Father's Name</label>
+                            <input type="text" class="form-control" id="fatherName" placeholder="Enter father's name" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="motherName" class="form-label">Mother's Name</label>
+                            <input type="text" class="form-control" id="motherName" placeholder="Enter mother's name" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="parentPhone" class="form-label">Parent's Phone Number</label>
+                            <input type="tel" class="form-control" id="parentPhone" placeholder="Enter parent's phone number" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="parentEmail" class="form-label">Parent's Email</label>
+                            <input type="email" class="form-control" id="parentEmail" placeholder="Enter parent's email" required>
+                        </div>
+                    </div>
                 </div>
         
-                <div class="form-group">
-                    <label for="address">Home Address</label>
-                    <textarea class="form-control" id="address" name="address" rows="3" placeholder="Enter home address" required></textarea>
+                <!-- Part 4: Details of Person/Organization Paying School Fees -->
+                <div class="section mb-4">
+                    <h4>Details of Person/Organization Paying School Fees</h4>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label for="payerName" class="form-label">Payer's Name/Organization</label>
+                            <input type="text" class="form-control" id="payerName" placeholder="Enter name or organization" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="payerPhone" class="form-label">Payer's Phone Number</label>
+                            <input type="tel" class="form-control" id="payerPhone" placeholder="Enter phone number" required>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="payerAddress" class="form-label">Payer's Address</label>
+                            <input type="text" class="form-control" id="payerAddress" placeholder="Enter address" required>
+                        </div>
+                    </div>
                 </div>
         
-                <div class="form-group">
-                    <label for="contactNumber">Contact Number</label>
-                    <input type="tel" class="form-control" id="contactNumber" name="contactNumber" placeholder="Enter contact number" required>
-                </div>
-        
-                <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter email address" required>
-                </div>
-        
-                <!-- Educational Background -->
-                <div class="form-group">
-                    <label for="highestQualification">Highest Qualification</label>
-                    <input type="text" class="form-control" id="highestQualification" name="highestQualification" placeholder="Enter highest qualification" required>
-                </div>
-        
-                <div class="form-group">
-                    <label for="university">University/College Attended</label>
-                    <input type="text" class="form-control" id="university" name="university" placeholder="Enter university/college name" required>
-                </div>
-        
-                <div class="form-group">
-                    <label for="graduationYear">Year of Graduation</label>
-                    <input type="number" class="form-control" id="graduationYear" name="graduationYear" placeholder="Enter year of graduation" required>
-                </div>
-        
-                <!-- Teaching Experience -->
-                <div class="form-group">
-                    <label for="teachingExperience">Teaching Experience (in years)</label>
-                    <input type="number" class="form-control" id="teachingExperience" name="teachingExperience" placeholder="Enter years of teaching experience" required>
-                </div>
-        
-                <div class="form-group">
-                    <label for="subjectsTaught">Subjects Taught</label>
-                    <input type="text" class="form-control" id="subjectsTaught" name="subjectsTaught" placeholder="Enter subjects taught" required>
-                </div>
-        
-                <!-- File Upload for Academic Documents -->
-                <div class="form-group">
-                    <label for="academicDocuments">Upload Academic Documents</label>
-                    <input type="file" class="form-control-file" id="academicDocuments" name="academicDocuments[]" multiple required>
-                    <small class="form-text text-muted">You can upload multiple documents. Accepted formats: PDF, DOCX, JPG, PNG.</small>
+                <!-- Part 5: Student Health -->
+                <div class="section mb-4">
+                    <h4>Student Health</h4>
+                    <div class="row g-3">
+                        <div class="col-md-12">
+                            <label for="healthConditions" class="form-label">Health Conditions</label>
+                            <textarea class="form-control" id="healthConditions" rows="3" placeholder="List any health conditions or concerns" required></textarea>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="allergies" class="form-label">Allergies</label>
+                            <textarea class="form-control" id="allergies" rows="3" placeholder="List any allergies" required></textarea>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="doctorContact" class="form-label">Doctor's Contact Information</label>
+                            <input type="text" class="form-control" id="doctorContact" placeholder="Enter doctor's name and phone number" required>
+                        </div>
+                    </div>
                 </div>
         
                 <!-- Submit Button -->
-                
-             <div class="see-more-btn" style="display: block; margin: 20px auto; text-align: center;">
-             <button class="btn btn-primary" id="seeMoreButton">Submit Application</button>
-              </div>
+                <div class="text-center mt-4">
+                    <button type="submit" class="btn btn-primary">Submit Application</button>
+                </div>
             </form>
         </div>
         

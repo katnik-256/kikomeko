@@ -189,7 +189,7 @@ p {
     }
     
     .button-92:hover {
-        transform: rotate(2deg);
+      transform: scale(1.9); /* Scale the button to 110% on hover */
     }
     .button-92[data-v-736b3c67] {
         cursor: pointer;
@@ -198,3 +198,7 @@ p {
         margin: 0;
         padding: .1em .3em;
     }        
+
+ 
+
+    
