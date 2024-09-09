@@ -58,11 +58,11 @@ p {
 }
 
 .jumbotron {
-            background: url('./Assets/images/DSC_0012.JPG') no-repeat center center; /* Background image */
+            background: url('./Assets/Image2/mdd15.jpg') no-repeat center center; /* Background image */
             background-size: cover; /* Cover the entire area */
             color: white; /* Text color */
             padding: 60px 30px; /* Padding inside the jumbotron */
-            margin: 0; /* Remove margins */
+            margin-top: 50px; /* Remove margins */
             width: 100%; /* Full width */
             display: flex;
             flex-direction: column;
