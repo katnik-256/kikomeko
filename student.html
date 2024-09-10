@@ -100,10 +100,79 @@
     
     <!-- Main Content -->
     <main class="container my-5">
-        <div class="container mt-5">
-            <h2 class="text-center mb-4">Student Particulars</h2>
-            <form action="/submit_application" method="POST">
-              
+        <div class="container mt-4">
+            <form>
+                <fieldset>
+                    <legend>Student Particulars</legend>
+                    
+                    <div class="row">
+                        <!-- Column 1 -->
+                        <div class="col-md-6 mb-3">
+                            <label for="firstName" class="form-label">Full Name:</label>
+                            <input type="text" class="form-control" id="firstName" name="firstName">
+                        </div>
+        
+                        <div class="col-md-6 mb-3">
+                            <label for="lastName" class="form-label">Class Applied:</label>
+                            <input type="text" class="form-control" id="lastName" name="lastName">
+                        </div>
+        
+                        <!-- Column 2 -->
+                        <div class="col-md-6 mb-3">
+                            <label for="lastName" class="form-label">Former School:</label>
+                            <input type="text" class="form-control" id="lastName" name="lastName">
+                        </div>
+        
+                        <div class="col-md-6 mb-3">
+                            <label for="lastName" class="form-label">Index Number:</label>
+                            <input type="text" class="form-control" id="lastName" name="lastName">
+                        </div>
+                    </div>
+                </fieldset>
+        
+               
+            </form>
+        </div>
+
+        <div class="container mt-4">
+            <form>
+                <fieldset>
+                    <legend>Details of Person/Organization Paying Fees</legend>
+                    
+                    <div class="row">
+                        <!-- Column 1 -->
+                        <div class="col-md-6 mb-3">
+                            <label for="firstName" class="form-label">Name:</label>
+                            <input type="text" class="form-control" id="firstName" name="firstName">
+                        </div>
+        
+                        <div class="col-md-6 mb-3">
+                            <label for="phone" class="form-label">Phone Number:</label>
+                            <input type="tel" class="form-control" id="phone" name="phone">
+                        </div>
+                        
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+
+        <div class="container mt-4">
+            <form>
+                <fieldset>
+                    <legend>Student's Health Details:</legend>
+                    
+                    <div class="row">
+                         <!-- Textarea Field -->
+            <div class="mb-3">
+               
+                <textarea class="form-control" id="comments" name="comments" rows="5" placeholder="Enter your comments"></textarea>
+            </div>
+        </fieldset>
+        
+                        
+                        
+                    </div>
+                </fieldset>
             </form>
         </div>
        
