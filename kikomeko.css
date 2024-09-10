@@ -216,6 +216,21 @@ p {
       color: #007bff;
   }
 
+  table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #f7f7f7;
+}
+
+
  
 
     

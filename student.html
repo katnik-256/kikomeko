@@ -17,6 +17,38 @@
     .col{
         margin-top:3px;
     }
+
+
+    
+        /* Style for the submit button */
+        .btn-send {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            background-color: #0e7b2e;
+            border: none;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+            margin-top: 30px;
+            margin-left: 00px;
+           
+        }
+
+        /* Icon style */
+        .btn-send i {
+            margin-left: 8px;
+        }
+
+        /* Hover effect: enlarge the button */
+        .btn-send:hover {
+            transform: scale(1.5); /* Button enlarges on hover */
+        }
+    
     </style>
 </head>
 
@@ -47,7 +79,7 @@
                           <li><a class="dropdown-item" href="academics.html">Academics</a></li>
                           <li><a class="dropdown-item" href="mdd.html">Debates</a></li>
                           <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="compound.html">Adimisions</a></li>
+                          <li><a class="dropdown-item" href="student.html">Adimisions</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -103,7 +135,7 @@
         <div class="container mt-4">
             <form>
                 <fieldset>
-                    <legend>Student Particulars</legend>
+                    <legend>Particulars of Student</legend>
                     
                     <div class="row">
                         <!-- Column 1 -->
@@ -133,6 +165,140 @@
                
             </form>
         </div>
+        <div class="container mt-4">
+            <form>
+                <fieldset>
+                    <legend style="padding: 0px 10px;">Results:</legend>
+        
+                    <!-- Row with 4 columns -->
+                    <div class="row">
+                        <div class="col-md-3 mb-3">
+                            <label for="firstName" class="form-label">Math:</label>
+                            <select class="form-select" id="grade" name="results">
+                                <option value="" disabled selected></option>
+                                <option value="Grade">D1</option>
+                                <option value="Grade">D2</option>
+                                <option value="Grade">C3</option>
+                                <option value="Grade">C4</option>
+                                <option value="Grade">C5</option>
+                                <option value="Grade">C6</option>
+                                <option value="Grade">P7</option>
+                                <option value="Grade">P8</option>
+                                
+                            </select>
+                        </div>
+        
+                        <div class="col-md-3 mb-3">
+                            <label for="lastName" class="form-label">Science:</label>
+                            <select class="form-select" id="grade" name="results">
+                                <option value="" disabled selected></option>
+                                <option value="Grade">D1</option>
+                                <option value="Grade">D2</option>
+                                <option value="Grade">C3</option>
+                                <option value="Grade">C4</option>
+                                <option value="Grade">C5</option>
+                                <option value="Grade">C6</option>
+                                <option value="Grade">P7</option>
+                                <option value="Grade">P8</option>
+                                
+                            </select>
+                        </div>
+        
+                        <div class="col-md-3 mb-3">
+                            <label for="lastName" class="form-label">English:</label>
+                            <select class="form-select" id="grade" name="results">
+                                <option value="" disabled selected></option>
+                                <option value="Grade">D1</option>
+                                <option value="Grade">D2</option>
+                                <option value="Grade">C3</option>
+                                <option value="Grade">C4</option>
+                                <option value="Grade">C5</option>
+                                <option value="Grade">C6</option>
+                                <option value="Grade">P7</option>
+                                <option value="Grade">P8</option>
+                                
+                            </select>
+                        </div>
+        
+                        <div class="col-md-3 mb-3">
+                            <label for="lastName" class="form-label">SST:</label>
+                                <select class="form-select" id="grade" name="results">
+                                    <option value="" disabled selected></option>
+                                    <option value="Grade">D1</option>
+                                    <option value="Grade">D2</option>
+                                    <option value="Grade">C3</option>
+                                    <option value="Grade">C4</option>
+                                    <option value="Grade">C5</option>
+                                    <option value="Grade">C6</option>
+                                    <option value="Grade">P7</option>
+                                    <option value="Grade">P8</option>
+                                    
+                                </select>
+                           
+                        </div>
+                    </div>
+                </fieldset>
+    
+            </form>
+        </div>
+        
+
+        <div class="container mt-4">
+            <form>
+                <fieldset>
+                    <legend>Particulars of Parent</legend>
+        
+                    <!-- Table with 2 columns and 6 rows -->
+                    <table>
+                        <tr>
+                            <th>Label</th>
+                            <th>Input Field</th>
+                        </tr>
+        
+                        <!-- Row 1 -->
+                        <tr>
+                            <td><label for="firstName">Farther:</label></td>
+                            <td><input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter Farther's Name"></td>
+                        </tr>
+        
+                        <!-- Row 2 -->
+                        <tr>
+                            <td><label for="lastName">Mother:</label></td>
+                            <td><input type="text" class="form-control" id="lastName" name="lastName" placeholder="Enter Mother's Name"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="lastName">Occupation:</label></td>
+                            <td><input type="text" class="form-control" id="lastName" name="lastName" placeholder="Enter Mother's Name"></td>
+                        </tr>
+        
+                        <!-- Row 3 -->
+                        <tr>
+                            <td><label for="email">Email:</label></td>
+                            <td><input type="email" class="form-control" id="email" name="email" placeholder="Enter Email"></td>
+                        </tr>
+        
+                        <!-- Row 4 -->
+                        <tr>
+                            <td><label for="phone">Phone Number:</label></td>
+                            <td><input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter Phone Number"></td>
+                        </tr>
+        
+                        <!-- Row 5 -->
+                        <tr>
+                            <td><label for="address">Home District:</label></td>
+                            <td><input type="text" class="form-control" id="address" name="address" placeholder="District Name"></td>
+                        </tr>
+        
+                        <!-- Row 6 -->
+                        <tr>
+                            <td><label for="city">Village/Residance:</label></td>
+                            <td><input type="text" class="form-control" id="city" name="city" placeholder="Enter Village/Residance"></td>
+                        </tr>
+                    </table>
+        
+                </fieldset>
+        
 
         <div class="container mt-4">
             <form>
@@ -163,16 +329,20 @@
                     
                     <div class="row">
                          <!-- Textarea Field -->
-            <div class="mb-3">
-               
-                <textarea class="form-control" id="comments" name="comments" rows="5" placeholder="Enter your comments"></textarea>
-            </div>
-        </fieldset>
+                    <div class="mb-3">
+                    <textarea class="form-control" id="comments" name="comments" rows="5" placeholder="Please enter health details"></textarea>
+                    </div>
+                </fieldset>
         
                         
                         
                     </div>
                 </fieldset>
+
+                <button type="submit" class="btn-send" id="sendButton" style="">
+                    Proceed to Payements
+                    <i class="fas fa-paper-plane"></i>
+                </button>
             </form>
         </div>
        
@@ -184,7 +354,7 @@
         <div class="container text-center text-md-left" >
             <div class="row text-center text-md-left">
                 <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 ">
-                    <h3 class="text-uppercase mb-4 font-weight-bold text-warning">KIKOMEKO SS</h3>
+                    <h3 class="text-uppercase mb-4 font-weight-bold text-primary">KIKOMEKO SS</h3>
                     <img class="footer-image" src="./Assets/budge.JPG" alt="footer-image" height="165" width="180">
                     <p class="font-italic" style="color: white;">Prepared for All Things</p>
                 </div>
@@ -249,7 +419,7 @@
                 <div class="col-md-7 col-lg-8" >
                     <p style="color: white;">Copyright &copy;2024 All rights reservd to:
                         <a href="copyright.html" style="text-decoration: none;">
-                            <strong class="text-warning">KIKOMEKO SS</strong>
+                            <strong class="text-primary">KIKOMEKO SS</strong>
                         </a>
                     </p>
                 </div>

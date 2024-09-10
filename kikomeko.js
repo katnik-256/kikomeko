@@ -17,3 +17,29 @@ document.addEventListener("DOMContentLoaded", function() {
         button.style.transition = 'transform 0.3s ease';
     });
 });
+
+// JavaScript function to center the button
+function centerButton() {
+    const button = document.getElementById('sendButton');
+    const container = button.parentElement.parentElement;
+
+    // Get the container's dimensions
+    const containerWidth = container.offsetWidth;
+    const containerHeight = container.offsetHeight;
+
+    // Get the button's dimensions
+    const buttonWidth = button.offsetWidth;
+    const buttonHeight = button.offsetHeight;
+
+    // Calculate the position to center the button
+    const leftPosition = (containerWidth - buttonWidth) / 2;
+    const topPosition = (containerHeight - buttonHeight) / 2;
+
+    // Apply the calculated positions to the button
+    button.style.left = leftPosition + 'px';
+    button.style.top = topPosition + 'px';
+}
+
+// Run the function when the window loads and when it's resized
+window.onload = centerButton;
+window.onresize = centerButton;
