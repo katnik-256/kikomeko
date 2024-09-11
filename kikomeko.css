@@ -229,6 +229,39 @@ td, th {
 th {
     background-color: #f7f7f7;
 }
+.required {
+  color: red;
+  font-weight: bold;
+}
+
+/* Style fornd the submit button */
+.btn-send {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #0e7b2e;
+  border: none;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-left: 00px;
+ 
+}
+
+/* Icon style */
+.btn-send i {
+  margin-left: 8px;
+}
+
+/* Hover effect: enlarge the button */
+.btn-send:hover {
+  transform: scale(1.5); /* Button enlarges on hover */
+}
 
 
  

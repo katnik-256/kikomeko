@@ -17,13 +17,36 @@
     .col{
         margin-top:3px;
     }
+    /* Custom styling for fieldset */
+    fieldset {
+            border: 2px solid #007bff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        legend {
+            padding: 0 10px;
+            font-weight: bold;
+            color: #007bff;
+            background-color: white;
+        }
+
+        /* Optional styling for labels and inputs */
+        .form-label {
+            font-weight: bold;
+        }
+        .required {
+            color: red;
+            font-weight: bold;
+        }
     </style>
 </head>
 
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #2a2a2a;">
         <div class="container-fluid">
             <a class="navbar-brand" href="gallery.html" style="color: #2a2a2a;">
                 <img src="./Assets/budge.JPG" alt="School Icon" width="30" height="30" class="d-inline-block align-text-top">
@@ -36,7 +59,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link active" aria-current="page" href="index.html" style="color: white;">Home</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -88,141 +111,112 @@
         </div>
     </nav>
 
-    <!-- Header Section -->
-    <header class="bg-dark text-white text-center py-5">
-        <div class="container">
-            <h1>KIKOMEKO SECONDARY SCHOOL</h1>
-            <p class="lead" style="color: #007bff;">"Prepared For all Things"</p>
-        </div>
-    </header>
+    <div class="jumbotron" style="background-image: url('./Assets/Image2/schl5.jpg');">
+        <h1>Welcome to Our School</h1>
+        <p style="color: #0056b3;">Your journey to excellence starts here. Join us and explore the world of knowledge and opportunities.</p>
+        <a href="student.html"><button role="button" class="button-92">
+            Online Admissions (2024) Apply Now  
+            <i class="el-icon-s-promotion"></i>
+        </button></a>
+    </div>
+
+   
 
     
     <!-- Main Content -->
     <main class="container my-5">
-        <div class="container mt-5">
-            <h2 class="text-center mb-4">Secondary School Application Form</h2>
+        <div class="container mt-4">
+            <h2 class="mb-4 text-center">Teacher Job Application Form</h2>
             <form>
-                <!-- Part 1: Particulars of Student -->
-                <div class="section mb-4">
-                    <h4>Particulars of Student</h4>
-                    <div class="row g-3">
-                        <div class="col-md-6">
-                            <label for="studentName" class="form-label">Student Name</label>
-                            <input type="text" class="form-control" id="studentName" placeholder="Enter student's full name" required>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="studentDOB" class="form-label">Date of Birth</label>
-                            <input type="date" class="form-control" id="studentDOB" required>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="studentGender" class="form-label">Gender</label>
-                            <select class="form-control" id="studentGender" required>
-                                <option value="">Select Gender</option>
-                                <option value="male">Male</option>
-                                <option value="female">Female</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="studentNationality" class="form-label">Nationality</label>
-                            <input type="text" class="form-control" id="studentNationality" placeholder="Enter nationality" required>
-                        </div>
-                        <div class="col-md-12">
-                            <label for="studentAddress" class="form-label">Address</label>
-                            <input type="text" class="form-control" id="studentAddress" placeholder="Enter address" required>
-                        </div>
+                <!-- Fieldset: Particulars of the Applicant -->
+                <fieldset>
+                    <legend>Particulars of the Applicant</legend>
+                    <div class="mb-3">
+                        <label for="fullName" class="form-label">Full Name:<span class="required">*</span></label>
+                        <input type="text" class="form-control" id="fullName" name="fullName" required>
                     </div>
-                </div>
         
-                <!-- Part 2: Results -->
-                <div class="section mb-4">
-                    <h4>Results</h4>
-                    <div class="row g-3">
-                        <div class="col-md-6">
-                            <label for="studentPreviousSchool" class="form-label">Previous School Attended</label>
-                            <input type="text" class="form-control" id="studentPreviousSchool" placeholder="Enter previous school" required>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="studentGrades" class="form-label">Grades Achieved</label>
-                            <input type="text" class="form-control" id="studentGrades" placeholder="Enter grades achieved" required>
-                        </div>
-                        <div class="col-md-12">
-                            <label for="uploadResults" class="form-label">Upload Academic Results (PDF only)</label>
-                            <input type="file" class="form-control" id="uploadResults" accept="application/pdf" required>
-                            <small class="form-text text-muted">Only PDF format is allowed.</small>
-                        </div>
+                    <div class="mb-3">
+                        <label for="dob" class="form-label">Date of Birth:<span class="required">*</span></label>
+                        <input type="date" class="form-control" id="dob" name="dob" required>
                     </div>
-                </div>
         
-                <!-- Part 3: Particulars of Parents -->
-                <div class="section mb-4">
-                    <h4>Particulars of Parents</h4>
-                    <div class="row g-3">
-                        <div class="col-md-6">
-                            <label for="fatherName" class="form-label">Father's Name</label>
-                            <input type="text" class="form-control" id="fatherName" placeholder="Enter father's name" required>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="motherName" class="form-label">Mother's Name</label>
-                            <input type="text" class="form-control" id="motherName" placeholder="Enter mother's name" required>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="parentPhone" class="form-label">Parent's Phone Number</label>
-                            <input type="tel" class="form-control" id="parentPhone" placeholder="Enter parent's phone number" required>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="parentEmail" class="form-label">Parent's Email</label>
-                            <input type="email" class="form-control" id="parentEmail" placeholder="Enter parent's email" required>
-                        </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Phone Number:<span class="required">*</span></label>
+                        <input type="tel" class="form-control" id="phone" name="phone" required>
                     </div>
-                </div>
         
-                <!-- Part 4: Details of Person/Organization Paying School Fees -->
-                <div class="section mb-4">
-                    <h4>Details of Person/Organization Paying School Fees</h4>
-                    <div class="row g-3">
-                        <div class="col-md-6">
-                            <label for="payerName" class="form-label">Payer's Name/Organization</label>
-                            <input type="text" class="form-control" id="payerName" placeholder="Enter name or organization" required>
-                        </div>
-                        <div class="col-md-6">
-                            <label for="payerPhone" class="form-label">Payer's Phone Number</label>
-                            <input type="tel" class="form-control" id="payerPhone" placeholder="Enter phone number" required>
-                        </div>
-                        <div class="col-md-12">
-                            <label for="payerAddress" class="form-label">Payer's Address</label>
-                            <input type="text" class="form-control" id="payerAddress" placeholder="Enter address" required>
-                        </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email:<span class="required">*</span></label>
+                        <input type="email" class="form-control" id="email" name="email" required>
                     </div>
-                </div>
+                </fieldset>
         
-                <!-- Part 5: Student Health -->
-                <div class="section mb-4">
-                    <h4>Student Health</h4>
-                    <div class="row g-3">
-                        <div class="col-md-12">
-                            <label for="healthConditions" class="form-label">Health Conditions</label>
-                            <textarea class="form-control" id="healthConditions" rows="3" placeholder="List any health conditions or concerns" required></textarea>
-                        </div>
-                        <div class="col-md-12">
-                            <label for="allergies" class="form-label">Allergies</label>
-                            <textarea class="form-control" id="allergies" rows="3" placeholder="List any allergies" required></textarea>
-                        </div>
-                        <div class="col-md-12">
-                            <label for="doctorContact" class="form-label">Doctor's Contact Information</label>
-                            <input type="text" class="form-control" id="doctorContact" placeholder="Enter doctor's name and phone number" required>
-                        </div>
+                <!-- Fieldset: Address -->
+                <fieldset>
+                    <legend>Address</legend>
+                    <div class="mb-3">
+                        <label for="address" class="form-label">Country:<span class="required">*</span></label>
+                        <input type="text" class="form-control" id="address" name="address" required>
                     </div>
-                </div>
+        
+                    <div class="mb-3">
+                        <label for="city" class="form-label">City:<span class="required">*</span></label>
+                        <input type="text" class="form-control" id="city" name="city" required>
+                    </div>
+        
+                    <div class="mb-3">
+                        <label for="state" class="form-label">Home District:<span class="required">*</span></label>
+                        <input type="text" class="form-control" id="state" name="state" required>
+                    </div>
+        
+                    <div class="mb-3">
+                        <label for="zip" class="form-label">Village/Residance:<span class="required">*</span></label>
+                        <input type="text" class="form-control" id="zip" name="zip" required>
+                    </div>
+                </fieldset>
+        
+                <!-- Fieldset: Level of Education Attained -->
+                <fieldset>
+                    <legend>Level of Education Attained</legend>
+                    <div class="mb-3">
+                        <label for="highestEducation" class="form-label">Highest Level of Education:<span class="required">*</span></label>
+                        <select class="form-select" id="highestEducation" name="highestEducation" required>
+                            <option value="" disabled selected></option>
+                            <option value="bachelors">Bachelor's Degree</option>
+                            <option value="masters">Master's Degree</option>
+                            <option value="phd">PhD</option>
+                            <option value="diploma">Diploma</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+        
+                    <div class="mb-3">
+                        <label for="institution" class="form-label">Institution Attended:<span class="required">*</span></label>
+                        <input type="text" class="form-control" id="institution" name="institution" required>
+                    </div>
+                </fieldset>
+        
+                <!-- Fieldset: Upload Academic Documents -->
+                <fieldset>
+                    <legend>Upload Academic Documents</legend>
+                    <div class="mb-3">
+                        <label for="documents" class="form-label">Upload your academic documents (PDF only):<span class="required">*</span></label>
+                        <input type="file" class="form-control" id="documents" name="documents" accept=".pdf" required>
+                    </div>
+                </fieldset>
         
                 <!-- Submit Button -->
-                <div class="text-center mt-4">
-                    <button type="submit" class="btn btn-primary">Submit Application</button>
+                <div class="text-center">
+
+                    <button type="submit" class="btn-send" id="sendButton" style="">
+                        Apply
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
                 </div>
             </form>
         </div>
         
-
 
     </main>
 
@@ -230,12 +224,12 @@
         <div class="container text-center text-md-left" >
             <div class="row text-center text-md-left">
                 <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 ">
-                    <h3 class="text-uppercase mb-4 font-weight-bold text-warning">KIKOMEKO SS</h3>
+                    <h3 class="text-uppercase mb-4 font-weight-bold text-primary">KIKOMEKO SS</h3>
                     <img class="footer-image" src="./Assets/budge.JPG" alt="footer-image" height="165" width="180">
                     <p class="font-italic" style="color: white;">Prepared for All Things</p>
                 </div>
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                    <h3 class="text-uppercase mb-4 font-weight-bold text-warning">Links</h3>
+                    <h3 class="text-uppercase mb-4 font-weight-bold text-primary">Links</h3>
                     <p>
                         <a href="index.html" class="text-white" style="text-decoration: none;">Home</a>
                     </p>
@@ -254,7 +248,7 @@
                    
                 </div>
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                    <h3 class="text-uppercase mb-4 font-weight-bold text-warning">The School</h3>
+                    <h3 class="text-uppercase mb-4 font-weight-bold text-primary">School</h3>
                     <p>
                         <a href="help.html" class="text-white" style="text-decoration: none;">Visit shool</a>
                     </p>
@@ -272,7 +266,7 @@
                     </p>
                 </div>
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <h3 class="text-uppercase mb-4 font-weight-bold text-warning">Contact</h3>
+                    <h3 class="text-uppercase mb-4 font-weight-bold text-primary">Contact</h3>
                     <p style="color: white;">
                         <i class="fas fa-home mr-3"></i>Kituntu Sub-county
                     </p>
@@ -295,7 +289,7 @@
                 <div class="col-md-7 col-lg-8" >
                     <p style="color: white;">Copyright &copy;2024 All rights reservd to:
                         <a href="copyright.html" style="text-decoration: none;">
-                            <strong class="text-warning">KIKOMEKO SS</strong>
+                            <strong class="text-primary">KIKOMEKO SS</strong>
                         </a>
                     </p>
                 </div>
