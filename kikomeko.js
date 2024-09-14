@@ -43,3 +43,35 @@ function centerButton() {
 // Run the function when the window loads and when it's resized
 window.onload = centerButton;
 window.onresize = centerButton;
+
+
+//JavaScript to toggle payment details based on selection 
+       
+            document.addEventListener('DOMContentLoaded', function () {
+                const paymentMethods = document.querySelectorAll('input[name="paymentMethod"]');
+                const airtelDetails = document.getElementById('airtelDetails');
+                const mtnDetails = document.getElementById('mtnDetails');
+                const bankDetails = document.getElementById('bankDetails');
+        
+                // Function to hide all payment details
+                function hideAllPaymentDetails() {
+                    airtelDetails.style.display = 'none';
+                    mtnDetails.style.display = 'none';
+                    bankDetails.style.display = 'none';
+                }
+        
+                // Add event listener to each payment method
+                paymentMethods.forEach(function (method) {
+                    method.addEventListener('change', function () {
+                        hideAllPaymentDetails();
+                        if (this.value === 'airtel') {
+                            airtelDetails.style.display = 'block';
+                        } else if (this.value === 'mtn') {
+                            mtnDetails.style.display = 'block';
+                        } else if (this.value === 'bank') {
+                            bankDetails.style.display = 'block';
+                        }
+                    });
+                });
+            });
+        

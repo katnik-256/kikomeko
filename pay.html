@@ -133,223 +133,76 @@
     <!-- Main Content -->
     <main class="container my-5">
         <div class="container mt-4">
+            <h2 class="mb-4 text-center">Payment Form</h2>
             <form>
+                <!-- Radio Buttons for Payment Method -->
                 <fieldset>
-                    <legend>Particulars of Student</legend>
-                    
-                    <div class="row">
-                        <!-- Column 1 -->
-                        <div class="col-md-6 mb-3">
-                            <label for="firstName" class="form-label">Full Name:<span class="required">*</span></label>
-                            <input type="text" class="form-control" id="firstName" name="firstName">
-                        </div>
-        
-                        <div class="col-md-6 mb-3">
-                            <label for="lastName" class="form-label">Class Applied:<span class="required">*</span></label>
-                            <input type="text" class="form-control" id="lastName" name="lastName">
-                        </div>
-        
-                        <!-- Column 2 -->
-                        <div class="col-md-6 mb-3">
-                            <label for="lastName" class="form-label">Former School:<span class="required">*</span></label>
-                            <input type="text" class="form-control" id="lastName" name="lastName">
-                        </div>
-        
-                        <div class="col-md-6 mb-3">
-                            <label for="lastName" class="form-label">Index Number:<span class="required">*</span></label>
-                            <input type="text" class="form-control" id="lastName" name="lastName">
-                        </div>
-                    </div>
-                </fieldset>
-        
-               
-            </form>
-        </div>
-        <div class="container mt-4">
-            <form>
-                <fieldset>
-                    <legend style="padding: 0px 10px;">Results:<span class="required">*</span></legend>
-        
-                    <!-- Row with 4 columns -->
-                    <div class="row">
-                        <div class="col-md-3 mb-3">
-                            <label for="firstName" class="form-label">Math:<span class="required">*</span></label>
-                            <select class="form-select" id="grade" name="results">
-                                <option value="" disabled selected></option>
-                                <option value="Grade">D1</option>
-                                <option value="Grade">D2</option>
-                                <option value="Grade">C3</option>
-                                <option value="Grade">C4</option>
-                                <option value="Grade">C5</option>
-                                <option value="Grade">C6</option>
-                                <option value="Grade">P7</option>
-                                <option value="Grade">P8</option>
-                                
-                            </select>
-                        </div>
-        
-                        <div class="col-md-3 mb-3">
-                            <label for="lastName" class="form-label">Science:<span class="required">*</span></label>
-                            <select class="form-select" id="grade" name="results">
-                                <option value="" disabled selected></option>
-                                <option value="Grade">D1</option>
-                                <option value="Grade">D2</option>
-                                <option value="Grade">C3</option>
-                                <option value="Grade">C4</option>
-                                <option value="Grade">C5</option>
-                                <option value="Grade">C6</option>
-                                <option value="Grade">P7</option>
-                                <option value="Grade">P8</option>
-                                
-                            </select>
-                        </div>
-        
-                        <div class="col-md-3 mb-3">
-                            <label for="lastName" class="form-label">English:<span class="required">*</span></label>
-                            <select class="form-select" id="grade" name="results">
-                                <option value="" disabled selected></option>
-                                <option value="Grade">D1</option>
-                                <option value="Grade">D2</option>
-                                <option value="Grade">C3</option>
-                                <option value="Grade">C4</option>
-                                <option value="Grade">C5</option>
-                                <option value="Grade">C6</option>
-                                <option value="Grade">P7</option>
-                                <option value="Grade">P8</option>
-                                
-                            </select>
-                        </div>
-        
-                        <div class="col-md-3 mb-3">
-                            <label for="lastName" class="form-label">SST:<span class="required">*</span></label>
-                                <select class="form-select" id="grade" name="results">
-                                    <option value="" disabled selected></option>
-                                    <option value="Grade">D1</option>
-                                    <option value="Grade">D2</option>
-                                    <option value="Grade">C3</option>
-                                    <option value="Grade">C4</option>
-                                    <option value="Grade">C5</option>
-                                    <option value="Grade">C6</option>
-                                    <option value="Grade">P7</option>
-                                    <option value="Grade">P8</option>
-                                    
-                                </select>
-                           
-                        </div>
-                    </div>
-                </fieldset>
-    
-            </form>
-        </div>
-        
-
-        <div class="container mt-4">
-            <form>
-                <fieldset>
-                    <legend>Particulars of Parent</legend>
-        
-                    <!-- Table with 2 columns and 6 rows -->
-                    <table>
-                        <tr>
-                            <th>Label</th>
-                            <th>Input Field</th>
-                        </tr>
-        
-                        <!-- Row 1 -->
-                        <tr>
-                            <td><label for="firstName">Farther:</label></td>
-                            <td><input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter Farther's Name"></td>
-                        </tr>
-        
-                        <!-- Row 2 -->
-                        <tr>
-                            <td><label for="lastName">Mother:<span class="required">*</span></label></td>
-                            <td><input type="text" class="form-control" id="lastName" name="lastName" placeholder="Enter Mother's Name"></td>
-                        </tr>
-
-                        <tr>
-                            <td><label for="lastName">Occupation:<span class="required">*</span></label></td>
-                            <td><input type="text" class="form-control" id="lastName" name="lastName" placeholder="Enter Mother's Name"></td>
-                        </tr>
-        
-                        <!-- Row 3 -->
-                        <tr>
-                            <td><label for="email">Email:<span class="required">*</span></label></td>
-                            <td><input type="email" class="form-control" id="email" name="email" placeholder="Enter Email"></td>
-                        </tr>
-        
-                        <!-- Row 4 -->
-                        <tr>
-                            <td><label for="phone">Phone Number:<span class="required">*</span></label></td>
-                            <td><input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter Phone Number"></td>
-                        </tr>
-        
-                        <!-- Row 5 -->
-                        <tr>
-                            <td><label for="address">Home District:<span class="required">*</span></label></td>
-                            <td><input type="text" class="form-control" id="address" name="address" placeholder="District Name"></td>
-                        </tr>
-        
-                        <!-- Row 6 -->
-                        <tr>
-                            <td><label for="city">Village/Residance:<span class="required">*</span></label></td>
-                            <td><input type="text" class="form-control" id="city" name="city" placeholder="Enter Village/Residance"></td>
-                        </tr>
-                    </table>
-        
-                </fieldset>
-        
-
-        <div class="container mt-4">
-            <form>
-                <fieldset>
-                    <legend>Details of Person/Organization Paying Fees</legend>
-                    
-                    <div class="row">
-                        <!-- Column 1 -->
-                        <div class="col-md-6 mb-3">
-                            <label for="firstName" class="form-label">Name:<span class="required">*</span></label>
-                            <input type="text" class="form-control" id="firstName" name="firstName">
-                        </div>
-        
-                        <div class="col-md-6 mb-3">
-                            <label for="phone" class="form-label">Phone Number:<span class="required">*</span></label>
-                            <input type="tel" class="form-control" id="phone" name="phone">
-                        </div>
-                        
-                    </div>
-                </fieldset>
-            </form>
-        </div>
-
-        <div class="container mt-4">
-            <form>
-                <fieldset>
-                    <legend>Student's Health Details:<span class="required">*</span></legend>
-                    
-                    <div class="row">
-                         <!-- Textarea Field -->
+                    <legend>Select Payment Method</legend>
                     <div class="mb-3">
-                    <textarea class="form-control" id="comments" name="comments" rows="5" placeholder="Please enter health details"></textarea>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="airtelMoney" name="paymentMethod" value="airtel" required>
+                            <label for="airtelMoney" class="form-check-label">Airtel Money</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="mtnMoney" name="paymentMethod" value="mtn" required>
+                            <label for="mtnMoney" class="form-check-label">MTN Mobile Money</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="bankPayment" name="paymentMethod" value="bank" required>
+                            <label for="bankPayment" class="form-check-label">Bank Payment</label>
+                        </div>
                     </div>
                 </fieldset>
         
-                        
-                        
+                <!-- Airtel Money Payment Details -->
+                <div id="airtelDetails" class="payment-details">
+                    <h4>Airtel Money Payment</h4>
+                    <div class="mb-3">
+                        <label for="airtelNumber" class="form-label">Airtel Money Number:</label>
+                        <input type="tel" class="form-control" id="airtelNumber" name="airtelNumber" placeholder="Enter Airtel Money number">
                     </div>
-                </fieldset>
+                    <div class="mb-3">
+                        <label for="airtelAmount" class="form-label">Amount to Pay:</label>
+                        <input type="number" class="form-control" id="airtelAmount" name="airtelAmount" placeholder="Enter amount">
+                    </div>
+                </div>
+        
+                <!-- MTN Mobile Money Payment Details -->
+                <div id="mtnDetails" class="payment-details">
+                    <h4>MTN Mobile Money Payment</h4>
+                    <div class="mb-3">
+                        <label for="mtnNumber" class="form-label">MTN Mobile Money Number:</label>
+                        <input type="tel" class="form-control" id="mtnNumber" name="mtnNumber" placeholder="Enter MTN Mobile Money number">
+                    </div>
+                    <div class="mb-3">
+                        <label for="mtnAmount" class="form-label">Amount to Pay:</label>
+                        <input type="number" class="form-control" id="mtnAmount" name="mtnAmount" placeholder="Enter amount">
+                    </div>
+                </div>
+        
+                <!-- Bank Payment Details -->
+                <div id="bankDetails" class="payment-details">
+                    <h4>Bank Payment</h4>
+                    <div class="mb-3">
+                        <label for="bankName" class="form-label">Bank Name:</label>
+                        <input type="text" class="form-control" id="bankName" name="bankName" placeholder="Enter bank name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="accountNumber" class="form-label">Account Number:</label>
+                        <input type="text" class="form-control" id="accountNumber" name="accountNumber" placeholder="Enter account number">
+                    </div>
+                    <div class="mb-3">
+                        <label for="bankAmount" class="form-label">Amount to Pay:</label>
+                        <input type="number" class="form-control" id="bankAmount" name="bankAmount" placeholder="Enter amount">
+                    </div>
+                </div>
+        
+                <!-- Submit Button -->
                 <div class="text-center">
-
-               <a href=""> <button type="submit" class="btn-send" id="sendButton" style="">
-                    Proceed to Payements
-                    <i class="fas fa-paper-plane"></i>
-                </button></a>
-            </div>
+                    <button type="submit" class="btn btn-primary">Submit Payment</button>
+                </div>
             </form>
-        </div>
-       
-
-        
+        </div> 
     </main>
 
     <footer class=" text-white text-center pt-5" style="background: #2a2a2a;">
@@ -409,7 +262,7 @@
                         <i class="fas fa-phone mr-3"></i>+256 701643245
                     </p>
                     <p style="color: white;">
-                        <i class="fas fa-phone mr-3"></i>+256 774010730
+                        <i class="fas fa-phone mr-3"></i>+256 0774010730
                     </p style="color: white;">
                     <p style="color: white;">
                         <i class="fas fa-phone mr-3"></i>+256 
