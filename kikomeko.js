@@ -75,3 +75,27 @@ window.onresize = centerButton;
                 });
             });
         
+            document.getElementById('studentForm').addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevent form submission
+        
+                // Validate required fields
+                var isValid = true;
+                var requiredFields = document.querySelectorAll('input[required], select[required]');
+                
+                requiredFields.forEach(function(field) {
+                    if (!field.value) {
+                        isValid = false;
+                        field.classList.add('is-invalid'); // Add Bootstrap's invalid class
+                    } else {
+                        field.classList.remove('is-invalid');
+                    }
+                });
+        
+                if (isValid) {
+                    // If valid, redirect to another page
+                    alert('Form submitted successfully! Redirecting to payments page...');
+                    window.location.href = 'pay.html'; // Redirect to another page
+                } else {
+                    alert('Please fill in all required fields.');
+                }
+            });
