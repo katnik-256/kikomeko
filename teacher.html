@@ -130,8 +130,8 @@
     <!-- Main Content -->
     <main class="container my-5">
         <div class="container mt-4">
-            <h2 class="mb-4 text-center">Teacher Job Application Form</h2>
-            <form>
+            <h2 class="mb-4 text-center">Apply As a Teacher</h2>
+            <form onsubmit="return validateForm()">
                 <!-- Fieldset: Particulars of the Applicant -->
                 <fieldset>
                     <legend>Particulars of the Applicant</legend>
@@ -213,7 +213,7 @@
                 <!-- Submit Button -->
                 <div class="text-center">
 
-                    <button type="submit" class="btn-send" id="sendButton" style="">
+                    <button type="submit" class="btn-send" id="sendButton">
                         Apply
                         <i class="fas fa-paper-plane"></i>
                     </button>
@@ -328,6 +328,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="kikomeko.js"></script>
+    <script src="form.js"></script>
 </body>
 
 </html>
