@@ -142,19 +142,26 @@
             <form>
                 <!-- Radio Buttons for Payment Method -->
                 <fieldset>
-                    <legend>Select Payment Method</legend>
                     <div class="mb-3">
                         <div class="form-check">
-                            <input type="radio" class="form-check-input" id="airtelMoney" name="paymentMethod" value="airtel" required>
-                            <label for="airtelMoney" class="form-check-label">Airtel Money</label>
+                            <input type="radio" class="form-check-input" id="airtelMoney" name="paymentMethod" value="airtel" required onclick="showMobileInput('airtel')">
+                            <label for="airtelMoney" class="form-check-label">
+                                <img src="Assets/airtel.jpeg" alt="Airtel Money" style="width: 80px; height: 100px; margin-right: 8px;">
+                                Airtel Money
+                            </label>
                         </div>
                         <div class="form-check">
-                            <input type="radio" class="form-check-input" id="mtnMoney" name="paymentMethod" value="mtn" required>
-                            <label for="mtnMoney" class="form-check-label">MTN Mobile Money</label>
+                            <input type="radio" class="form-check-input" id="mtnMoney" name="paymentMethod" value="mtn" required onclick="showMobileInput('mtn')">
+                            <label for="mtnMoney" class="form-check-label">
+                                <img src="Assets/Mtn.jpeg" alt="Airtel Money" style="width: 100px; height: 100px; margin-right: 10px;">
+                                MTN Mobile Money
+                            </label>
                         </div>
                         <div class="form-check">
-                            <input type="radio" class="form-check-input" id="bankPayment" name="paymentMethod" value="bank" required>
-                            <label for="bankPayment" class="form-check-label">Bank Payment</label>
+                            <input type="radio" class="form-check-input" id="bankPayment" name="paymentMethod" value="bank" required onclick="showMobileInput('bank')">
+                            <label for="bankPayment" class="form-check-label">
+                                Bank Payment
+                            </label>
                         </div>
                     </div>
                 </fieldset>
@@ -314,6 +321,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="kikomeko.js"></script>
+    <script src="pay.js"></script>
 </body>
 
 </html>
