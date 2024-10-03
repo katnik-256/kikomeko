@@ -142,31 +142,60 @@
             <form>
                 <!-- Radio Buttons for Payment Method -->
                 <fieldset>
-                    <div class="mb-3">
-                        <div class="form-check">
-                            <input type="radio" class="form-check-input" id="airtelMoney" name="paymentMethod" value="airtel" required onclick="showMobileInput('airtel')">
-                            <label for="airtelMoney" class="form-check-label">
-                                <img src="Assets/airtel.jpeg" alt="Airtel Money" style="width: 80px; height: 100px; margin-right: 8px;">
-                                Airtel Money
-                            </label>
+                    <div class="row mb-3">
+                        <div class="col-md-4">
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="airtelMoney" name="paymentMethod" value="airtel" required onclick="showMobileInput('airtel')">
+                                <label for="airtelMoney" class="form-check-label">
+                                    <img src="Assets/airtel.jpeg" alt="Airtel Money" style="width: 110px; height: 100px; margin-right: 8px;">
+                                    Airtel Money
+                                </label>
+                            </div>
                         </div>
-                        <div class="form-check">
-                            <input type="radio" class="form-check-input" id="mtnMoney" name="paymentMethod" value="mtn" required onclick="showMobileInput('mtn')">
-                            <label for="mtnMoney" class="form-check-label">
-                                <img src="Assets/Mtn.jpeg" alt="Airtel Money" style="width: 100px; height: 100px; margin-right: 10px;">
-                                MTN Mobile Money
-                            </label>
+                        <div class="col-md-4">
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="mtnMoney" name="paymentMethod" value="mtn" required onclick="showMobileInput('mtn')">
+                                <label for="mtnMoney" class="form-check-label">
+                                    <img src="Assets/Mtn.jpeg" alt="MTN Money" style="width: 100px; height: 100px; margin-right: 10px;">
+                                    MTN Mobile Money
+                                </label>
+                            </div>
                         </div>
-                        <div class="form-check">
-                            <input type="radio" class="form-check-input" id="bankPayment" name="paymentMethod" value="bank" required onclick="showMobileInput('bank')">
-                            <label for="bankPayment" class="form-check-label">
-                                Bank Payment
-                            </label>
+                        <div class="col-md-4">
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="bankPayment" name="paymentMethod" value="bank" required onclick="showMobileInput('bank')">
+                                <label for="bankPayment" class="form-check-label">
+                                    <img src="Assets/stanbic.png" alt="MTN Money" style="width: 100px; height: 100px; margin-right: 10px;">
+                                    Bank Payment
+                                </label>
+                            </div>
                         </div>
                     </div>
+                
+                    <!-- Hidden sections for Airtel Money -->
+                    <div id="airtelSection" style="display: none;">
+                        <div class="mb-3">
+                            <label for="airtelNumber" class="form-label">Airtel Money Number:</label>
+                            <input type="tel" class="form-control" id="airtelNumber" name="airtelNumber" placeholder="Enter Airtel Money number">
+                        </div>
+                        <div class="mb-3">
+                            <label for="airtelAmount" class="form-label">Amount to Pay:</label>
+                            <input type="number" class="form-control" id="airtelAmount" name="airtelAmount" placeholder="Enter amount">
+                        </div>
+                    </div>
+                
+                    <!-- Hidden sections for MTN Money (can be added similarly) -->
+                    <div id="mtnSection" style="display: none;">
+                        <!-- Similar input fields for MTN Money -->
+                    </div>
+                
+                    <!-- Hidden sections for Bank Payment (can be added similarly) -->
+                    <div id="bankSection" style="display: none;">
+                        <!-- Similar input fields for Bank Payment -->
+                    </div>
                 </fieldset>
-        
-                <!-- Airtel Money Payment Details -->
+                
+                <!-- Airtel Money Payment Details 
                 <div id="airtelDetails" class="payment-details">
                     <h4>Airtel Money Payment</h4>
                     <div class="mb-3">
@@ -179,7 +208,7 @@
                     </div>
                 </div>
         
-                <!-- MTN Mobile Money Payment Details -->
+                <!-- MTN Mobile Money Payment Details 
                 <div id="mtnDetails" class="payment-details">
                     <h4>MTN Mobile Money Payment</h4>
                     <div class="mb-3">
@@ -192,7 +221,7 @@
                     </div>
                 </div>
         
-                <!-- Bank Payment Details -->
+                <!-- Bank Payment Details 
                 <div id="bankDetails" class="payment-details">
                     <h4>Bank Payment</h4>
                     <div class="mb-3">
