@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIKOMEKO SS </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <link rel="icon" href="./Assets/budge.JPG" type="image/x-icon">
+    <link rel="stylesheet" href="kikomeko.css">
+    <style>
+    h2{
+       text-align:center;
+    }
+    .col{
+        margin-top:3px;
+    }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg  fixed-top" style="background-color: #2a2a2a;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="gallery.html" style="color: white;">
+                <img src="./Assets/budge.JPG" alt="School Icon" width="30" height="30" class="d-inline-block align-text-top">
+                KIKOMEKO SS
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="background-color: white;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html" style="color: white;">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          About Us
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                          <li><a class="dropdown-item" href="academics.html">Academics</a></li>
+                          <li><a class="dropdown-item" href="mdd.html">Debates</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="student.html">Adimisions</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Activities
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="sports.html">Sports</a></li>
+                          <li><a class="dropdown-item" href="mdd.html">MDD</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="compound.html">Our School Compound</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Join Us
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="student.html">As a Student</a></li>
+                          <li><a class="dropdown-item" href="teacher.html">As a Teacher</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="intern.html">As an Intern</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex ms-3">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-primary" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <a href="https://wa.me/256701643245?text=Hello!%20I'd%20like%20to%20inquire%20about%20..." class="whatsapp-icon" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+
+    
+    <div class="container mt-5"></div>
+        <h3 style="margin-top: 20%; margin-left: 10%;">Pay with Stanbic Bank </h3>
+        <form id="stanbicForm" style="margin-left: 10%;">
+            <!-- Account Number Input -->
+            <div class="mb-3">
+                <label for="stanbicAccountNumber" class="form-label">Stanbic Account Number:</label>
+                <input type="text" class="form-control" id="stanbicAccountNumber" name="stanbicAccountNumber" placeholder="Enter your Stanbic account number" required pattern="[0-9]{10,12}" title="Account number should be 10 to 12 digits">
+            </div>
+            <!-- Amount Input -->
+            <div class="mb-3">
+                <label for="amount" class="form-label">Amount to Pay (Minimum UGX 50,000):</label>
+                <input type="number" class="form-control" id="amount" name="amount" placeholder="Enter amount" required min="50000">
+            </div>
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+
+        <!-- Message Section -->
+        <div id="message" class="mt-3"></div>
+    </div>
+   
+    <script>
+        // Form submission handler
+        document.getElementById('stanbicForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const accountNumber = document.getElementById('stanbicAccountNumber').value;
+            const amount = document.getElementById('amount').value;
+
+            // Validation check for account number (10-12 digits) and amount (min UGX 50,000)
+            if (/^[0-9]{10,12}$/.test(accountNumber) && amount >= 50000) {
+                // Simulate the process of collecting money
+                document.getElementById('message').innerHTML = `
+                    <div class="alert alert-success">
+                        Payment of UGX ${amount} has been successfully collected from Stanbic Account Number: ${accountNumber}.
+                    </div>`;
+                
+                // Clear form fields after successful submission
+                document.getElementById('stanbicForm').reset();
+            } else {
+                // Display error if the input is invalid
+                document.getElementById('message').innerHTML = `
+                    <div class="alert alert-danger">
+                        Invalid input. Please ensure the account number is 10-12 digits and the amount is at least UGX 50,000.
+                    </div>`;
+            }
+        });
+    </script>
+      
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="kikomeko.js"></script>
+</body>
+
+</html>
+
