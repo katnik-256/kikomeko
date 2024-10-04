@@ -138,14 +138,14 @@
     <!-- Main Content -->
     <main class="container my-5">
         <div class="container mt-4">
-            <h2 class="mb-4 text-center">Payment Form</h2>
+            <h2 class="mb-4 text-center">Select Payment Method</h2>
             <form>
                 <!-- Radio Buttons for Payment Method -->
                 <fieldset>
                     <div class="row mb-3">
                         <div class="col-md-4">
                             <div class="form-check">
-                                <input type="radio" class="form-check-input" id="airtelMoney" name="paymentMethod" value="airtel" required onclick="showMobileInput('airtel')">
+                                <input type="radio" class="form-check-input" id="airtelMoney" name="paymentMethod" value="airtel" required onclick="redirectToPaymentPage('airtel')">
                                 <label for="airtelMoney" class="form-check-label">
                                     <img src="Assets/airtel.jpeg" alt="Airtel Money" style="width: 110px; height: 100px; margin-right: 8px;">
                                     Airtel Money
@@ -183,65 +183,11 @@
                             <input type="number" class="form-control" id="airtelAmount" name="airtelAmount" placeholder="Enter amount">
                         </div>
                     </div>
-                
-                    <!-- Hidden sections for MTN Money (can be added similarly) -->
-                    <div id="mtnSection" style="display: none;">
-                        <!-- Similar input fields for MTN Money -->
-                    </div>
-                
-                    <!-- Hidden sections for Bank Payment (can be added similarly) -->
-                    <div id="bankSection" style="display: none;">
-                        <!-- Similar input fields for Bank Payment -->
-                    </div>
+
                 </fieldset>
-                
-                <!-- Airtel Money Payment Details 
-                <div id="airtelDetails" class="payment-details">
-                    <h4>Airtel Money Payment</h4>
-                    <div class="mb-3">
-                        <label for="airtelNumber" class="form-label">Airtel Money Number:</label>
-                        <input type="tel" class="form-control" id="airtelNumber" name="airtelNumber" placeholder="Enter Airtel Money number">
-                    </div>
-                    <div class="mb-3">
-                        <label for="airtelAmount" class="form-label">Amount to Pay:</label>
-                        <input type="number" class="form-control" id="airtelAmount" name="airtelAmount" placeholder="Enter amount">
-                    </div>
-                </div>
-        
-                <!-- MTN Mobile Money Payment Details 
-                <div id="mtnDetails" class="payment-details">
-                    <h4>MTN Mobile Money Payment</h4>
-                    <div class="mb-3">
-                        <label for="mtnNumber" class="form-label">MTN Mobile Money Number:</label>
-                        <input type="tel" class="form-control" id="mtnNumber" name="mtnNumber" placeholder="Enter MTN Mobile Money number">
-                    </div>
-                    <div class="mb-3">
-                        <label for="mtnAmount" class="form-label">Amount to Pay:</label>
-                        <input type="number" class="form-control" id="mtnAmount" name="mtnAmount" placeholder="Enter amount">
-                    </div>
-                </div>
-        
-                <!-- Bank Payment Details 
-                <div id="bankDetails" class="payment-details">
-                    <h4>Bank Payment</h4>
-                    <div class="mb-3">
-                        <label for="bankName" class="form-label">Bank Name:</label>
-                        <input type="text" class="form-control" id="bankName" name="bankName" placeholder="Enter bank name">
-                    </div>
-                    <div class="mb-3">
-                        <label for="accountNumber" class="form-label">Account Number:</label>
-                        <input type="text" class="form-control" id="accountNumber" name="accountNumber" placeholder="Enter account number">
-                    </div>
-                    <div class="mb-3">
-                        <label for="bankAmount" class="form-label">Amount to Pay:</label>
-                        <input type="number" class="form-control" id="bankAmount" name="bankAmount" placeholder="Enter amount">
-                    </div>
-                </div>
         
                 <!-- Submit Button -->
-                <div class="text-center">
-                    <button type="submit" class="btn btn-primary">Submit Payment</button>
-                </div>
+                
             </form>
         </div> 
     </main>

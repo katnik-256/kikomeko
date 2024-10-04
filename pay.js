@@ -13,3 +13,18 @@ function showMobileInput(paymentMethod) {
         document.getElementById('bankSection').style.display = 'block';
     }
 }
+
+
+// JavaScript function to redirect the user to the payment page
+function redirectToPaymentPage(paymentMethod) {
+    if (paymentMethod === 'airtel') {
+        // Redirect to Airtel Money payment page
+        window.location.href = 'airtelAmount.html'; // Change to your actual Airtel payment page
+    } else if (paymentMethod === 'mtn') {
+        // Redirect to MTN Mobile Money payment page
+        window.location.href = 'mtnForm.html'; // Change to your actual MTN payment page
+    } else if (paymentMethod === 'bank') {
+        // Redirect to Bank Payment page
+        window.location.href = 'bankForm.html'; // Change to your actual Bank payment page
+    }
+}
