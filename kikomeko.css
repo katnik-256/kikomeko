@@ -288,6 +288,14 @@ th {
   background-color: #128C7E; /* Darker WhatsApp color on hover */
 }
 
+.required {
+  color: red;
+}
+.validation-message {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 10px;
+}
 
  
 

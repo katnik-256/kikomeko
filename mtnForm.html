@@ -114,11 +114,11 @@
     <script>
         // Simulating sending the Airtel PIN prompt to the user's phone
         function sendAirtelPinPrompt(airtelNumber, amount) {
-            document.getElementById('message').innerHTML = `
+            document.getElementById('message').innerHTML =
                 <div class="alert alert-success">
                     Payment of UGX ${amount} initiated. A confirmation message has been sent to your number: ${airtelNumber}. 
                     Please enter your Airtel Money PIN on your phone to complete the transaction.
-                </div>`;
+                </div>
         }
 
         // Form submission handler
