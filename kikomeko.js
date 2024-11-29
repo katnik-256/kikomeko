@@ -75,4 +75,17 @@ window.onresize = centerButton;
                 });
             });
         
-           
+            // Initialize Typed.js
+    var typed = new Typed('#typed-text', {
+        strings: [
+          "Principle: Be whre the Community is",
+          "Religion: We put God First.",
+          "Academics: It's our priority."
+        ],
+        typeSpeed: 50,    // Typing speed in milliseconds
+        backSpeed: 30,    // Backspacing speed
+        loop: true,       // Loop through the strings
+        smartBackspace: true,
+        showCursor: true,
+        cursorChar: "|",  // Cursor character
+      });

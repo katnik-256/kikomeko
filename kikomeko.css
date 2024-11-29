@@ -296,7 +296,121 @@ th {
   font-size: 0.9em;
   margin-top: 10px;
 }
+/* --------------------flip box ---------------------------------------------*/
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
 
+
+
+.flip-box {
+  perspective: 1000px; /* Define the perspective for 3D effect */
+  width: 30%; /* Make the columns responsive */
+
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 250px; /* Adjust height as needed */
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front,
+.flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.flip-box-front {
+  background-color: #2a2a2a; /* Front background color */
+  color: white;
+}
+
+.flip-box-back {
+  background-color: #f8f9fa; /* Back background color */
+  color: #333;
+  transform: rotateY(180deg);
+  border: 1px solid #ccc;
+  font-size: large
+}
+
+.icon-container {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.img-fluid.rounded-top {
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+
+.card-body h4 {
+  font-size: 1.5rem;
+}
+
+.card-body p {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+.row {
+  margin-top: 2rem;
+}
+
+
+
+
+h2 span.d-block {
+  font-size: 1.9rem;
+  color: #2a2a2a; /* Custom dark color */
+}
+/* animated text */
+.typed-text {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #2a2a2a;
+}
+.static-text {
+  margin-bottom: 25px;
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+/*--------------column bg-image-------------------*/
+
+.bg-image-column-overlay{
+  background-image: url('./Assets/Image2/schl5.jpg');
  
+  background-size: cover; /* Makes the image cover the entire column */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Ensures the image does not repeat */
+  height: 100%; /* Ensures the height is consistent */
+  min-height: 400px; /* Sets a minimum height */
+  color: white; /* Text color for better readability */
+}
 
-    
+.bg-image-column-overlay {
+  /* Adds a semi-transparent overlay */
+  height: 100%;
+  padding: 20px; /* Adds padding inside the column */
+}

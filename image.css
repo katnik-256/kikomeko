@@ -1,0 +1,39 @@
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.curved-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0; /* Reset any default border-radius */
+}
+
+/* Custom corner styles */
+.curved-image.top-right {
+    border-top-right-radius: 20px; /* Curve the top-right corner */
+}
+
+.curved-image.bottom-left {
+    border-bottom-left-radius: 20px; /* Curve the bottom-left corner */
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+}

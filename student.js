@@ -48,3 +48,4 @@ function validateForm() {
 
     return isValid;
 }
+//validate contact numbers
